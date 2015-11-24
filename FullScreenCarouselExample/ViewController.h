@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
 
+@property (strong, nonatomic) IBOutlet iCarousel *verticalCarousel;
 
 @end
 

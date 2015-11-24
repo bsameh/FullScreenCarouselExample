@@ -13,6 +13,8 @@
 		0C1F5A261C04793D00E48282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F5A241C04793D00E48282 /* Main.storyboard */; };
 		0C1F5A281C04793D00E48282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F5A271C04793D00E48282 /* Assets.xcassets */; };
 		0C1F5A2B1C04793D00E48282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F5A291C04793D00E48282 /* LaunchScreen.storyboard */; };
+		0C1F5A351C048FCD00E48282 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F5A341C048FCD00E48282 /* iCarousel.m */; };
+		0C1F5A371C04949400E48282 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1F5A361C04949400E48282 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		0C1F5A271C04793D00E48282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1F5A2A1C04793D00E48282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1F5A2C1C04793D00E48282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1F5A331C048FCD00E48282 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		0C1F5A341C048FCD00E48282 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		0C1F5A361C04949400E48282 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1F5A371C04949400E48282 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				0C1F5A1A1C04793D00E48282 /* FullScreenCarouselExample */,
 				0C1F5A191C04793D00E48282 /* Products */,
+				0C231F799E144A091F9878E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,7 @@
 		0C1F5A1A1C04793D00E48282 /* FullScreenCarouselExample */ = {
 			isa = PBXGroup;
 			children = (
+				0C1F5A321C048FCD00E48282 /* iCarousel */,
 				0C1F5A1E1C04793D00E48282 /* AppDelegate.h */,
 				0C1F5A1F1C04793D00E48282 /* AppDelegate.m */,
 				0C1F5A211C04793D00E48282 /* ViewController.h */,
@@ -77,6 +85,23 @@
 				0C1F5A1C1C04793D00E48282 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C1F5A321C048FCD00E48282 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				0C1F5A331C048FCD00E48282 /* iCarousel.h */,
+				0C1F5A341C048FCD00E48282 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		0C231F799E144A091F9878E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C1F5A361C04949400E48282 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1F5A231C04793D00E48282 /* ViewController.m in Sources */,
+				0C1F5A351C048FCD00E48282 /* iCarousel.m in Sources */,
 				0C1F5A201C04793D00E48282 /* AppDelegate.m in Sources */,
 				0C1F5A1D1C04793D00E48282 /* main.m in Sources */,
 			);
@@ -298,6 +324,7 @@
 				0C1F5A311C04793D00E48282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
